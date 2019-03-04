@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "declaration": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "outDir": "./build-webpack",
+        "paths": {
+            "@auth/*": ["src/app/core/auth/*"],
+            "@config": ["src/environments/environment"],
+            "@core/*": ["src/app/core/*"],
+            "@crexi/*": ["src/app/*"],
+            "@models": ["src/models"],
+            "@store/*": ["src/app/store/*"],
+            "@test/*": ["karma/*"],
+            "content/*": ["src/content/*"]
+        },
+        "sourceMap": true,
+        "target": "es5"
+    }
+}
